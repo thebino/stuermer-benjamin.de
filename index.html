@@ -1,1 +1,115 @@
-Hello World
+---
+layout: default
+
+published: true
+images:
+  - image_path: images/image1_large.jpg
+    description: 2.8f - 300mm - 15"
+    title: image 1
+  - image_path: images/image2_large.jpg
+    description: bar
+    title: image 2
+  - image_path: images/image3_large.jpg
+    title: image 3
+  - image_path: images/image4_large.jpg
+    title: image 4
+  - image_path: images/image5_large.jpg
+    title: image 5
+  - image_path: images/image6_large.jpg
+    title: image 6
+  - image_path: images/image7_large.jpg
+    title: image 7
+  - image_path: images/image8_large.jpg
+    title: image 8
+  - image_path: images/image9_large.jpg
+    title: image 9
+---
+
+<div class="wrapper">
+  <div class="services_wrap">
+      <div class="services_wrap_inner">
+          <h3>Stay on Time</h3>
+          Phasellus porttitor gravida viverra. Vestibulum mattis in tellus ut semper. Etiam sodales, enim quis euismod rutrum, turpis lacus suscipit erat, eget interdum mauris nulla maximus purus. Praesent ornare bib endum sem id convallis. Vestibulum mattis in tellus ut semper.
+          <br>
+      </div>
+  </div>
+  <div class="services_wrap">
+      <div class="services_wrap_inner">
+          <h3>Stay on Time</h3>
+          Phasellus porttitor gravida viverra. Vestibulum mattis in tellus ut semper. Etiam sodales, enim quis euismod rutrum, turpis lacus suscipit erat, eget interdum mauris nulla maximus purus. Praesent ornare bib endum sem id convallis. Vestibulum mattis in tellus ut semper.
+          <br>
+      </div>
+  </div>
+  <div class="services_wrap">
+      <div class="services_wrap_inner">
+          <h3>Stay on Time</h3>
+          Phasellus porttitor gravida viverra. Vestibulum mattis in tellus ut semper. Etiam sodales, enim quis euismod rutrum, turpis lacus suscipit erat, eget interdum mauris nulla maximus purus. Praesent ornare bib endum sem id convallis. Vestibulum mattis in tellus ut semper.
+          <br>
+      </div>
+  </div>
+  <div style="clear:both"></div>
+
+  <div class="s5_photo_thumbs">
+    {% for image in page.images %}
+      <a data-lightbox="gallery" data-title="{{ image.description }}" href="{{ image.image_path }}" id="mb1" class="s5mb" title="{{ image.title }}" rel="[me]"><img src="{{ image.image_path }}" title="{{ image.title }}" alt="{{ image.title }}" id="mb1" class="grow"></a>
+    {% endfor %}
+    <div style="clear:both"></div>
+  </div>
+
+
+
+
+
+
+
+<div id="s5_below_columns_wrap2">
+  <div id="s5_below_columns_inner">      
+    <div id="s5_below_columns_1" class="s5_float_left" style="width:50%">
+      <div class="module_round_box_outer">
+        <div class="module_round_box-mediumtitle_dark">
+          <div class="s5_module_box_1">
+            <div class="s5_module_box_2">
+              <div class="s5_mod_h3_outer">
+                <h3 class="s5_mod_h3">
+                  <span class="s5_h3">Your App Unleashed</span>
+                </h3>
+              </div>
+              <div style="clear:both"></div>
+              <div class="s5_outer-mediumtitle_dark">
+                <div class="custom-mediumtitle_dark">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  <br><br>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                  <p class="readmore"><a class="btn" href="#">Read More</a></p>
+                </div>
+              </div>
+              <div style="clear:both; height:0px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="s5_below_columns_2" class="s5_float_left" style="width:40%">
+      <div class="module_round_box_outer">
+        <div class="module_round_box">
+          <div class="s5_module_box_1">
+            <div class="s5_module_box_2">
+              <div class="s5_outer">
+                <div class="custom">
+                  <div style="float: right; position: relative; z-index: 0;" class="twophones">
+                    <img src="/images/phone2.png" alt="phone2" style="float: right;position:relative;z-index:2;margin-right: 102px;;" data-scroll-reveal="enter right and move 90px over 0.5s" data-scroll-reveal-id="12" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+
+                    <img src="/images/phone3.png" class="phone2" alt="phone2" style="float: right;position:absolute;z-index:1;margin-left: 145px;margin-top: 32px;;" data-scroll-reveal="enter right and move 150px over 0.5s" data-scroll-reveal-id="13" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+                  </div>
+                </div>
+              </div>
+              <div style="clear:both; height:0px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="clear:both; height:0px"></div>
+  </div>
+  </div>
+</div>
