@@ -1,0 +1,29 @@
+.twophones {
+	
+}
+
+@media screen and (max-width: 970px) {
+	.twophones {
+	    float: none !important;
+	}
+}
+
+.project_container {
+	width: 100% !important;
+	margin-left: -40px !important;
+}
+
+@media screen and (max-width: 970px) {
+	.project_container {
+		margin-left: 0px !important;
+	}
+}
+
+.project_description {
+	line-height: 193% !important;
+}
+
+
+.float_right {
+	float: right !important;
+}

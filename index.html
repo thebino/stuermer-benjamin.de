@@ -25,3 +25,175 @@ images:
     title: image 9
 ---
 
+<div id="index-banner" class="parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>
+      <h1 class="site-logo header center brown-text text-lighten-2">Stürmer Benjamin</h1>
+      <div class="row center">
+        <h5 class="header col s12 grey-text light">Programming &amp; Photography</h5>
+      </div>
+
+    </div>
+  </div>
+  <div class="parallax"><img src="{{site.baseurl}}/images/background1.jpg" alt="Unsplashed background img 1"></div>
+</div>
+
+<div class="container">
+  <div class="section">
+
+    <!--   Icon Section   -->
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><i class="material-icons">android</i></h2>
+          <h5 class="center">Android</h5>
+
+          <p class="light">I'm working as a fulltime mobile Developer at Quartett mobile in Munich. I've spoken on the Droidcon in London and was part of the code camp in Munich. In my freetime I work on several projects and apps for fun.</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><i class="material-icons">camera</i></h2>
+          <h5 class="center">Photography</h5>
+
+          <p class="light">I was booked for several weddings, company events and private fotoshoots. I've traveled around the world to take amazing pictures and it is still my favorite hobby. My profound knowledge covers studio photography, architecture and portrait.</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><i class="material-icons">cloud</i></h2>
+          <h5 class="center">Internet</h5>
+
+          <p class="light">I offer services for information technologies in general, where I provide knowledge in different scopes. You can order webdesign, programming and network planning just as create special it-solutions.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 white-text light">"Photography is the only language that can be understood anywhere in the world."</h5>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="{{site.baseurl}}/images/background2.jpg" alt="Unsplashed background img 2"></div>
+</div>
+
+<div class="container">
+  <div class="section">
+
+    <div class="row">
+      <div class="col s12 center">
+        <h3><i class="mdi-content-send brown-text"></i></h3>
+        <h4>Photo Gallery</h4>
+        <div class="photo_thumbs">
+          {% for image in page.images %}
+            <a data-lightbox="gallery" data-title="{{ image.description }}" href="{{ image.image_path }}" id="mb1" class="s5mb" title="{{ image.title }}" rel="[me]"><img src="{{ image.image_path }}" title="{{ image.title }}" alt="{{ image.title }}" id="mb1" class="grow"></a>
+          {% endfor %}
+          <div style="clear:both"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 green-text light">"Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program."</h5>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="{{site.baseurl}}/images/background3.jpg" alt="Unsplashed background img 3"></div>
+</div>
+
+
+
+
+<div class="container">
+  <div class="row">
+      <div class="col l8 s12 float_right">
+        <h5 class="black-text">Time Tracker</h5>
+        <p class="black-text text-lighten-4 project_description thin">This app shows the scoretable of your favorite bavarian handball team. Currently there is only an android version but a webapp is also planned.
+          <br /><br />
+          The app supports also a preview on the phone, so you can adjust the view direction before using the release.</p>
+      </div>
+
+      <div class="col l4 s12">
+          <div class="project_container">
+              <div style="float: right; position: relative; z-index: 0;" class="twophones">
+                <img src="/images/project_phone_timetracker_side.png" alt="phone2" style="float: right;position:relative;z-index:0;margin-right: 102px;margin-top: 32px;" data-scroll-reveal="enter right and move 90px over 0.5s" data-scroll-reveal-id="12" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+
+                <img src="/images/project_phone_timetracker_center.png" class="phone2" alt="phone2" style="float: right;position:absolute;z-index:1;margin-left: 115px;" data-scroll-reveal="enter right and move 150px over 0.5s" data-scroll-reveal-id="13" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+              </div>
+              <div style="clear:both; height:0px"></div>
+          </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+
+
+<div class="container">
+  <div class="row">
+      <div class="col l8 s12">
+        <h5 class="black-text">Camera Remote</h5>
+        <p class="black-text text-lighten-4 project_description thin">Control your SONY camera from your smartphone. Set the exposure and shutter time when your camera is mounted on a tripod or create stunning HDR images on the fly without touching the camera itself. 
+        <br />
+        The app supports also a preview on the phone, so you can adjust the view direction before using the release.</p>
+      </div>
+
+      <div class="col l4 s12">
+          <div class="project_container">
+              <div style="float: right; position: relative; z-index: 0;" class="twophones">
+                <img src="/images/project_phone_camera_remote_center.png" alt="phone2" style="float: right;position:relative;z-index:2;margin-right: 102px;" data-scroll-reveal="enter right and move 90px over 0.5s" data-scroll-reveal-id="12" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+
+                <img src="/images/project_phone_camera_remote_side.png" class="phone2" alt="phone2" style="float: right;position:absolute;z-index:1;margin-left: 145px;margin-top: 32px;" data-scroll-reveal="enter right and move 150px over 0.5s" data-scroll-reveal-id="13" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+              </div>
+              <div style="clear:both; height:0px"></div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div class="container">
+  <div class="row">
+      <div class="col l4 s12">
+          <div class="project_container">
+              <div style="float: right; position: relative; z-index: 0;" class="twophones">
+                <img src="/images/project_phone_handball_center.png" alt="phone2" style="float: right;position:relative;z-index:2;margin-right: 102px;" data-scroll-reveal="enter right and move 90px over 0.5s" data-scroll-reveal-id="12" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+
+                <img src="/images/project_phone_handball_side.png" class="phone2" alt="phone2" style="float: right;position:absolute;z-index:1;margin-left: 145px;margin-top: 32px;" data-scroll-reveal="enter right and move 150px over 0.5s" data-scroll-reveal-id="13" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+              </div>
+              <div style="clear:both; height:0px"></div>
+          </div>
+      </div>
+
+      <div class="col l8 s12">
+        <h5 class="black-text">Handball Bayern</h5>
+        <p class="black-text text-lighten-4 project_description thin">This app shows the scoretable of your favorite bavarian handball team. Currently there is only an android version but a webapp is also planned.
+          <br /><br />
+          The app supports also a preview on the phone, so you can adjust the view direction before using the release.</p>
+      </div>
+
+    </div>
+  </div>
+

@@ -1,0 +1,28 @@
+nav .brand-logo {
+	color: #000 !important;
+}
+
+nav a {
+	color: #000 !important;
+	
+}
+
+.page-footer img {
+	margin-left: 5px;
+}
+
+.site-logo {
+	font-family: BinofontItalic;
+	text-decoration: none;
+}
+
+
+@font-face{
+	font-family:'BinofontItalic';
+	src:url("/binofont/binofont.eot");
+	src:url("/binofont/binofont.eot?#iefix") 
+	format("embedded-opentype"),url("/binofont/binofont.woff") 
+	format("woff"),url("/binofont/binofont.ttf") 
+	format("truetype"),url("/binofont/binofont.svg#BinofontItalic") 
+	format("svg");font-weight:normal;font-style:normal
+}
