@@ -11,7 +11,7 @@ collections:
     output:                       true
 
 source:                           .
-destination:                      ./_site
+destination:                      public
 plugins_dir:                      _plugins
 
 
@@ -34,6 +34,9 @@ timezone:                         Europe/Berlin
 encoding:                         "utf-8"
 
 
+sass:
+  sass_dir:                       _scss
+  style:                          compressed
 # -------------------------------- #
 #  Build Command OptionsPermalink  #
 # -------------------------------- #
@@ -80,8 +83,6 @@ email:
 root: /
 permalink: /:categories/:title/
 
-destination: public
-plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
 markdown: rdiscount

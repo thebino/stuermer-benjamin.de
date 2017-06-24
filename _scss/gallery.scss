@@ -1,0 +1,42 @@
+.photo_thumbs {
+    margin-right: -1px;
+}
+
+
+.photo_thumbs img {
+    width:33.333333%;
+    display:inline-block;
+    float:left;
+    cursor:pointer;
+    position:relative;
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+}
+
+.photo_thumbs img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1); 
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    z-index:2;
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+    -moz-box-shadow:0 0px 18px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0px 18px rgba(0, 0, 0, 0.5);
+    box-shadow:0 0px 18px rgba(0, 0, 0, 0.5);
+}
+
+
+.grow {
+    width: 450px;
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
