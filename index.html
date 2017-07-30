@@ -5,11 +5,9 @@ published: true
 images:
   - image_small: images/photos/image01_small.jpg
     image_large: images/photos/image01_large.jpg
-    description: 2.8f - 300mm - 15"
-    title: image 1
+    title: 2.8f - 300mm - 15"
   - image_small: images/photos/image02_small.jpg
     image_large: images/photos/image02_large.jpg
-    description: bar
     title: 2.8f - 55mm - 1/2500
   - image_small: images/photos/image03_small.jpg
     image_large: images/photos/image03_large.jpg
@@ -123,7 +121,7 @@ images:
         <h4>Photo Gallery</h4>
         <div class="photo_thumbs">
           {% for image in page.images %}
-            <a data-lightbox="gallery" data-title="{{ image.description }}" href="{{ image.image_large }}" id="mb1" class="s5mb" title="{{ image.title }}" rel="[me]"><img src="{{ image.image_small }}" title="{{ image.title }}" alt="{{ image.title }}" id="mb1" class="grow"></a>
+            <a data-lightbox="gallery" data-title="{{ image.title }}" href="{{ image.image_large }}" id="mb1" class="s5mb" title="{{ image.title }}" rel="[me]"><img src="{{ image.image_small }}" title="{{ image.title }}" alt="{{ image.title }}" id="mb1" class="grow"></a>
           {% endfor %}
           <div style="clear:both"></div>
         </div>
