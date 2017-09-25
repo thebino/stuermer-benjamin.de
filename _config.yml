@@ -1,23 +1,19 @@
+url: https://stuermer-benjamin.de
+title: Stuermer, Benjamin
+subtitle: Programming and Photography
+author: Benjamin Stürmer
+simple_search: https://www.google.com/search
+description: Informations for Android, Continuous Development and Linux
+
+
+
 # -------------------------------- #
 #  Global Configuration            #
 # -------------------------------- #
 
-data_dir:                         _data
-draft_dir:                        _drafts
-includes_dir:                     _includes
-layouts_dir:                      _layouts
-collections:
-  posts:
-    output:                       true
-  projects:
-    output:                       true
-    permalink:                    /project/:name
-
-
 source:                           .
-destination:                      public
-plugins_dir:                      _plugins
 
+destination:                      public
 
 # Disable custom plugins, and ignore symbolic links
 safe:                             false
@@ -37,57 +33,81 @@ timezone:                         Europe/Berlin
 # Set the encoding of files by name. The default value is utf-8
 encoding:                         "utf-8"
 
+
+
+# -------------------------------- #
+# Where things are                 #
+# -------------------------------- #
+data_dir:                         _data
+draft_dir:                        _drafts
+includes_dir:                     _includes
+layouts_dir:                      _layouts
+
+# Collections allow you to define a new type of document that behave like Pages or Posts do normally
+collections:
+  posts:
+    output:                       true
+    permalink:                    /post/:year-:month-:day-:title/
+  projects:
+    output:                       true
+    permalink:                    /project/:name
+
+plugins_dir:                      _plugins
+
 sass:
-  sass_dir:                       _scss
+  sass_dir:                       _sass
   style:                          compressed
+
+
 # -------------------------------- #
 #  Build Command OptionsPermalink  #
 # -------------------------------- #
+incremental:                      true
+
 
 # -------------------------------- #
 #  Serve Command OptionsPermalink  #
 # -------------------------------- #
+port:                             4000
+host:                             127.0.0.1
+
 
 # -------------------------------- #
 #  Custom WEBrick HeadersPermalink #
 # -------------------------------- #
+webrick:
+  headers:
+    # sample custom header
+    X-App: jekyll
+    # Content-Type and Cache-Control are provided by default
+
 
 # -------------------------------- #
 #  Front Matter defaults           #
 # -------------------------------- #
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
 
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project" # overrides previous default layout
+      author: "Benjamin Stürmer"
 
-
-
-url: https://stuermer-benjamin.de
-title: Stuermer, Benjamin
-subtitle: Programming and Photography
-author: Benjamin Stürmer
-simple_search: https://www.google.com/search
-description: Informations for Android, Continuous Development and Linux
-
-# Default date format is "ordinal" (resulting in "July 22nd 2007")
-# You can customize the format as defined in
-# http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
-# Additionally, %o will give you the ordinal representation of the day
-date_format: "ordinal"
-
-# RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /atom.xml
-subscribe_email:
-# RSS feeds can list your email address if you like
-email:
 
 # ----------------------- #
 #    Jekyll & Plugins     #
 # ----------------------- #
+gems:
+  - octopress-codeblock
+  - octopress-image-tag
 
-# If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: /
-permalink: /:categories/:title/
-
-code_dir: downloads/code
-category_dir: blog/categories
 markdown: rdiscount
 rdiscount:
   extensions:
@@ -103,15 +123,6 @@ excerpt_separator: "<!--more-->"
 
 titlecase: true       # Converts page and post titles to titlecase
 
-# list each of the sidebar modules you want to include, in the order you want them to appear.
-# To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
-default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
-
-# Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
-# and add an array with the asides you want to use.
-# blog_index_asides:
-# post_asides:
-# page_asides:
 
 # ----------------------- #
 #   3rd Party Settings    #
@@ -149,7 +160,9 @@ disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id: UA-42459013-1
+google_analytics: UA-42459013-1
 
 # Facebook Like
 facebook_like: false
+
+
