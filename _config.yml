@@ -19,7 +19,7 @@ plugins_dir:                      _plugins
 safe:                             false
 
 # Exclude directories and/or files from the conversion. 
-exclude:                          ["Gemfile", "Gemfile.lock", "node_modules"]
+exclude:                          ["Gemfile", "Gemfile.lock", "node_modules", "docs"]
 
 # Force inclusion of directories and/or files in the conversion.  .htaccess is a good example since dotfiles are excluded by default.
 include:                          [".htaccess"]
