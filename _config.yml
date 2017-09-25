@@ -9,6 +9,10 @@ layouts_dir:                      _layouts
 collections:
   posts:
     output:                       true
+  projects:
+    output:                       true
+    permalink:                    /project/:name
+
 
 source:                           .
 destination:                      public
