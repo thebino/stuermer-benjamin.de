@@ -7,6 +7,14 @@ Hier sind alle Grundeinstellungen für die Website sowie octopress gespeichert.
 [![Build Status](https://travis-ci.org/thebino/stuermer-benjamin.png?branch=jekyll)](https://travis-ci.org/thebino/stuermer-benjamin)
 
 
+## Docker
+To run jekyll inside docker, run:
+```
+docker-compose up
+```
+
+
+
 ## Development
 ```
 jekyll serve --host 172.17.2.50
