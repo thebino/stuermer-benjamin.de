@@ -222,7 +222,7 @@ images:
       <div class="col s12 center">
         <div class="photo_thumbs">
           {% for image in page.images %}
-            <a data-lightbox="gallery" data-title="{{ image.title }}" href="{{ image.image_large }}" id="mb1" class="s5mb" title="{{ image.title }}" rel="[me]"><img src="{{ image.image_small }}" title="{{ image.title }}" alt="{{ image.title }}" id="mb1" class="grow"></a>
+            <a data-lightbox="gallery" data-title="{{ image.title }}" href="{{ image.image_large }}" id="picture{{ forloop.index }}" class="s5mb" title="{{ image.title }}" rel="[me]"><img src="{{ image.image_small }}" title="{{ image.title }}" alt="{{ image.title }}" id="mb1" class="grow"></a>
           {% endfor %}
           <div style="clear:both"></div>
         </div>
