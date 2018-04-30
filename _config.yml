@@ -13,7 +13,7 @@ description: Informations and photos from Benjamin Stürmer
 
 source:                           .
 
-destination:                      public
+destination:                      httpdocs
 
 # Disable custom plugins, and ignore symbolic links
 safe:                             false
