@@ -1,22 +1,19 @@
-url: https://stuermer-benjamin.de
-title: Stuermer, Benjamin
-subtitle: Programming and Photography
-author: Benjamin Stürmer
-simple_search: https://www.google.com/search
-description: Informations and photos from Benjamin Stürmer
+# jekyll configuration file
+#
+# https://jekyllrb.com/docs/configuration/
 
 
-
-# -------------------------------- #
-#  Global Configuration            #
-# -------------------------------- #
-
+#  Global Settings
+##################################
 source:                           .
+layouts_dir:                      _layouts
+data_dir:                         _data
+includes_dir:                     _includes
 
 destination:                      httpdocs
 
 # Disable custom plugins, and ignore symbolic links
-safe:                             false
+safe:                             true
 
 # Exclude directories and/or files from the conversion. 
 exclude:                          ["Gemfile", "Gemfile.lock", "node_modules", "docs"]
@@ -34,14 +31,23 @@ timezone:                         Europe/Berlin
 encoding:                         "utf-8"
 
 
+#  Build Command Options
+##################################
+show_drafts:                      false
+future:                           true
+unpublished:                      false
+incremental:                      true
+strict_front_matter:              true
 
-# -------------------------------- #
-# Where things are                 #
-# -------------------------------- #
-data_dir:                         _data
-draft_dir:                        _drafts
-includes_dir:                     _includes
-layouts_dir:                      _layouts
+
+
+
+#  Serve Command Options
+##################################
+port:                             4000
+hostname:                         172.17.2.50
+
+
 
 # Collections allow you to define a new type of document that behave like Pages or Posts do normally
 collections:
@@ -59,27 +65,15 @@ sass:
   style:                          compressed
 
 
-# -------------------------------- #
-#  Build Command OptionsPermalink  #
-# -------------------------------- #
-incremental:                      true
+
+url: https://stuermer-benjamin.de
+title: Stuermer, Benjamin
+subtitle: Programming and Photography
+author: Benjamin Stürmer
+simple_search: https://www.google.com/search
+description: Informations and photos from Benjamin Stürmer
 
 
-# -------------------------------- #
-#  Serve Command OptionsPermalink  #
-# -------------------------------- #
-port:                             4000
-host:                             127.0.0.1
-
-
-# -------------------------------- #
-#  Custom WEBrick HeadersPermalink #
-# -------------------------------- #
-webrick:
-  headers:
-    # sample custom header
-    X-App: jekyll
-    # Content-Type and Cache-Control are provided by default
 
 
 # -------------------------------- #
@@ -101,19 +95,35 @@ defaults:
       author: "Benjamin Stürmer"
 
 
+
+markdown:    kramdown
+highlighter: rouge
+# Markdown Processors
+rdiscount:
+  extensions: []
+
+kramdown:
+  auto_ids:      true
+  entity_output: as_char
+  toc_levels:    1..6
+  smart_quotes:  lsquo,rsquo,ldquo,rdquo
+  input:         GFM
+  hard_wrap:     false
+  footnote_nr:   1
+  show_warnings: false
 # ----------------------- #
 #    Jekyll & Plugins     #
 # ----------------------- #
-gems:
-  - octopress-codeblock
-  - octopress-image-tag
+#gems:
+#  - octopress-codeblock
+#  - octopress-image-tag
 
-markdown: rdiscount
-rdiscount:
-  extensions:
-    - autolink
-    - footnotes
-    - smart
+#markdown: rdiscount
+#rdiscount:
+#  extensions:
+#    - autolink
+#    - footnotes
+#    - smart
 
 #paginate: 10          # Posts per page on the blog index
 #paginate_path: "posts/:num"  # Directory base for pagination URLs eg. /posts/2/
