@@ -276,9 +276,11 @@ images:
     <div class="row">
       <div class="col s12 center">
         <div class="photo_thumbs">
+          <div id="aniimated-thumbnials">
           {% for image in page.images %}
-            <a data-lightbox="gallery" data-title="{{ image.title }}" href="{{ image.image_large }}" id="picture{{ forloop.index }}" class="s5mb" title="{{ image.title }}" rel="[me]"><img src="{{ image.image_small }}" title="{{ image.title }}" alt="{{ image.title }}" id="mb1" class="grow"></a>
+            <a href="{{ image.image_large }}" id="picture{{ forloop.index }}" class="s5mb" title="{{ image.title }}"><img src="{{ image.image_small }}" title="{{ image.title }}" alt="{{ image.title }}" id="mb1" class="grow"></a>
           {% endfor %}
+          </div>
           <div style="clear:both"></div>
         </div>
       </div>
@@ -351,8 +353,6 @@ images:
       </div>
     </div>
   </div>
-  <a data-lightbox="gallery" data-title="{{ image.title }}" href="{{ image.image_large }}" id="mb1" class="s5mb" title="{{ image.title }}" rel="[me]"><img src="{{ image.image_small }}" title="{{ image.title }}" alt="{{ image.title }}" id="mb1" class="grow"></a>
-  <div style="clear:both"></div>
 
   {% else %}
 

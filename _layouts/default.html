@@ -45,13 +45,17 @@
   <script src="{{ site.baseurl }}/scripts/materialize.js"></script>
   <script src="{{ site.baseurl }}/scripts/init.js"></script>
 
+  <script src="/lightgallery.js"></script>
+  <script src="/lg-fullscreen.js"></script>
+  <script src="/lg-zoom.js"></script>
   
-  <script src="/lightbox.js"></script>
-  <script>
-    lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true
-    })
+  <script src="/lg-fullscreen.js"></script>
+  <script type="text/javascript">
+    lightGallery(document.getElementById('aniimated-thumbnials'), {
+      thumbnail:true,
+      download:false,
+      preload:8
+    });
   </script>
 
   <script type="text/javascript">
