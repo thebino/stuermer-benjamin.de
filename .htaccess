@@ -1,16 +1,9 @@
 RewriteEngine On
-Redirect 301 /+ https://plus.google.com/115406825480863490687
-ErrorDocument 404 /error.php
-
-
-<IfModule mod_rewrite.c>
-RewriteEngine On
 RewriteBase /
-
+Redirect 301 /+ https://plus.google.com/115406825480863490687
 RedirectMatch 301 ^/v12_1/.*$ https://stuermer-benjamin.de/
 
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
-</IfModule>
+ErrorDocument 404 /404.gif
+
+
+
