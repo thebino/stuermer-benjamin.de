@@ -36,9 +36,9 @@ layout: default
       <p class="app-store-icons">
 	    {% for url in page.urls %}
 	    	{% if url.type == "playstore" %}
-				<a href="{{ url.url }}"><img src="https://play.google.com/intl/en_us/badges/images/badge_new.png" style="height:40px;" alt=""></a>
+				<a href="{{ url.url }}"><img src="https://play.google.com/intl/en_us/badges/images/badge_new.png" style="margin: 5px; height:40px;" alt=""></a>
 	    	{% elsif url.type == "appstore" %}
-				<a href="{{ url.url }}" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg) no-repeat;width:135px;height:40px;background-size:contain;"></a>
+				<a href="{{ url.url }}" style="margin: 5px; display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg) no-repeat;width:135px;height:40px;background-size:contain;"></a>
 	    	{% endif %}
 	    {% endfor %}
   	 </p>

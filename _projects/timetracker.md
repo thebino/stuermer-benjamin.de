@@ -11,10 +11,8 @@ images:
 urls:
   - type: playstore
     url: https://play.google.com/store/apps/details?id=de.stuermerbenjamin.wlantracker
-  - type: appstore
-    url: https://itunes.apple.com/de/app/wlan-tracker/id123456789
+  #- type: appstore
+  #  url: https://itunes.apple.com/de/app/wlan-tracker/id123456789
 ---
 
-This app tracks your wifi connects and disconnects with the current timestamp. In the next version there will also be geofences. 
-
-All Timeline entries can be filtered by date and type.
+Track your location changes with personal geofences in an easy way without sharing data with other parties. Geofences are virtual borders around an circle area you can define on a map. Everytime you enter or leave an area, the app will track the time and date. In a timeline you can filter all events by date and type.
