@@ -55,7 +55,7 @@ android update test-project --path ./tests --main ../</p>
 
 <p>Damit nun aus unserem Source Code und der build.xml eine fertige APK werden kann, müssen wir diese noch mit Ant behandeln. Um alle möglichen Prozesse von Ant zu erhalten, können Sie auf der Konsole in das Projekt Verzeichnis wechseln und dort den Befehl "ant" eingeben.</p>
 <br />
-{% codeblock lang:sh %}
+{% highlight shell lineos %}
 $ ant
 Buildfile: DemoApp/App-Code/DemoProjekt/build.xml
 help:
@@ -73,7 +73,7 @@ help:
  [echo] The 'nodeps' target can be used to only build the
  [echo] current project and ignore the libraries using:
  [echo] 'ant nodeps release'
- {% endcodeblock %}
+ {% endhighlight %}
 
 <p>Neben clean, debug und release finden sich noch Tasks für das Testing und zum de-/installieren der unterschiedlichsten Packages.</p>
 <br />

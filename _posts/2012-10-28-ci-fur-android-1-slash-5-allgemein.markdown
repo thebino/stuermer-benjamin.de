@@ -19,5 +19,5 @@ categories: Android
 <br />
 <p>CI wie es in der Kurzform genannt wird, soll hier Abhilfe schaffen. Jedes mal wenn ein einzelner Entwickler einen Schritt näher an sein Ziel gelangt, wird seine Arbeit “eingecheckt” und mit Hilfe von automatischen Programmen im Gesamtsystem geprüft. Das sog. “einchecken” kann hierbei über die unterschiedlichsten Wege passieren, etwa in dem er es an seinen Vorgesetzten übergibt oder in einem Versions Controll System speichert.</p>
 
-{% img /images/posts/2012-10-28_defect_chart.gif %}
+![image-title-here](/images/posts/2012-10-28_defect_chart.gif){:class="img-responsive"}
 http://www.agitar.com/solutions/why_unit_testing.html

@@ -10,7 +10,7 @@ post about Gradle and the new Android buildsystem for Android Studio.</p>
 <p>Google announced the new Gradle-based build system on Mai 15, 2013 at Google I/O in San francisco.</p>
 <p>&nbsp;</p>
 
-{% img /images/posts/2015-02-21_gradle_android_logo.png %}
+![image-title-here](/posts/2015-02-21_gradle_android_logo.png %}
 <p>&nbsp;</p>
 
 
@@ -58,7 +58,7 @@ require 'date'              # Ruby
 today = Date.new            # Ruby
 </pre>
 
-{% codeblock lang:java %}
+{% highlight java %}
 apply plugin: "java"
 description = "This is my description"
 
@@ -73,7 +73,7 @@ dependencies {
 test {
   jvmArgs "-Xmx1024m"
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 <h2>Gradle build scripts</h2>
 + written in a Groovy-based DSL
@@ -84,7 +84,7 @@ test {
 <h2>Tasks</h2>
 <p>Running 'gradle tasks' gives you a list of the main tasks of the selected project</p>
 <p>add '-b' or '--build-file' for customized script name eg. 'gradle -b test.gradle tasks'</p>
-{% codeblock lang:groovy %}
+{% highlight groovy %}
 task sampleTask {
     doFirst {
         println "doFirst"
@@ -94,7 +94,7 @@ task sampleTask {
         println "doLast"
     }
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 <p>All Tasks implement the org.gradle.api.Task interface.</p>
 <p>You can find all methods on the official documentation:</p>

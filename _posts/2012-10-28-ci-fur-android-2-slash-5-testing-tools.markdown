@@ -22,7 +22,7 @@ Das Android Testing Framework, ist bereits im Android-SDK enthalten und auch in 
 Zusätzlich zu unserem “zu testenden Projekt” erstellen wir ein Android Test Project
 
 
-{% img /images/posts/2012-10-28_test_framework.jpg %}
+![image-title-here](/images/posts/2012-10-28_test_framework.jpg){:class="img-responsive"}
 
 <!-- more -->
 
@@ -32,21 +32,21 @@ Bei der Wahl des Projektnamen ist es sinnvoll, an das zu testende Projekt ein �
 In der Offiziellen Dokumentation wird zusätzlich dazu geraten, das root Verzeichnis des TestProjekts innerhalb der ExampleView zu platzieren. Dadurch bleiben die App wie auch der Test Code immer beieinander.
 
 
-{% img /images/posts/2012-10-28_ordner_struktur.jpg %}
+![image-title-here](/images/posts/2012-10-28_ordner_struktur.jpg){:class="img-responsive"}
 
 
 Erstellen wir nun unseren ersten Test Case
 New -> JUnit Test Case
 
-{% img /images/posts/2012-10-28_test_case.jpg %}
+![image-title-here](/images/posts/2012-10-28_test_case.jpg){:class="img-responsive"}
 
 
 
 Mit Hilfe der Methoden
-{% codeblock lang:java %}
+{% highlight java %}
 public void sendKeys (int… keys)
 public static void assertTrue (boolean condition)
-{% endcodeblock %}
+{% endhighlight %}
 lassen sich aus JUnit gewohnte TestCases erstellen. Eine Ausführliche Einführung finden Sie auf der Seite tutsplus.com
 
  

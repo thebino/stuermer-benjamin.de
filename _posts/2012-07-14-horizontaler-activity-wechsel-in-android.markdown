@@ -16,7 +16,7 @@ Die Rede ist vom ViewPager.
 Bekannt wurde dieser mit dem Wechsel des Android Markets
 zu Google Play sowie der überarbeiteten Google+ App.
 
-{% img left /images/posts/2012-07-14_ViewPager.jpg %}
+![image-title-here](/images/posts/2012-07-14_ViewPager.jpg
 <!-- more -->
 
 Verwendet werden können die ViewPager bereits ab der
@@ -27,7 +27,7 @@ Wichtig ist, bei der Verwendung im Layout, dass man den
 kompletten Klasennamen verwendet:
 
 
-{% codeblock lang:java %}
+{% highlight java %}
 &lt;android.support.v4.view.ViewPager  android:layout_width="match_parent"  android:layout_height="match_parent"  /&gt;
-{% endcodeblock %}
+{% endhighlight %}
 Bitte beachten: layout_height="wrap_content" funktioniert NICHT beim ViewPager

@@ -1,5 +1,4 @@
 source "https://rubygems.org"
 
-gem 'rdiscount'
-gem 'octopress-codeblock'
-gem 'octopress-image-tag'
+gem 'jekyll', '~> 3.8'
+gem 'jekyll-sass-converter'

@@ -10,7 +10,7 @@ With this little Code Snippet, it is possible to get the Height and Geonames of 
 
 Example:
 
-{% codeblock lang:java %}
+{% highlight java %}
 try {
     URL url = new URL( "http://ws.geonames.org/srtm3?lat=" + tfBreitenGrad.getText() + "&amp;lng=" + tfLaengenGrad.getText() );
     URLConnection connection = url.openConnection();
@@ -20,4 +20,4 @@ try {
 } catch (IOException e1) {
     e1.printStackTrace();
 }
-{% endcodeblock %}
+{% endhighlight %}

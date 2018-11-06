@@ -1,6 +1,5 @@
 httpdocs
 .sass-cache/
 .jekyll-metadata
-.code-highlighter-cache/
 
 Gemfile.lock

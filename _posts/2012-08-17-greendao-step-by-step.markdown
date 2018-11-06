@@ -11,7 +11,7 @@ In diesem Artikel werde ich nicht auf die Vorteile, Performance oder Größe des
 
 <h2>1. Erstellen des Generator Projekts</h2>
 <br />
-{% img right /images/posts/2012-08-17_Generatorcreate.jpg %}
+![image-title-here](/images/posts/2012-08-17_Generatorcreate.jpg){:class="img-responsive"}
 
 Erstellen Sie in Eclipse ein neues JAVA Projekt, am besten geben Sie diesem den Namen ihres Projekts, und hängen “Generator” dahinter.
 Dadurch haben Sie die zugehörigen Projekte immer beisammen.
@@ -21,7 +21,7 @@ Dadurch haben Sie die zugehörigen Projekte immer beisammen.
 
 <h2>2. Importieren der Librarys</h2>
 <br />
-{% img right /images/posts/2012-08-17_Generatorimport.jpg %}
+![image-title-here](/images/posts/2012-08-17_Generatorimport.jpg){:class="img-responsive"}
 
 Erstellen Sie im Generator Projekt ein Verzeichnis “libs”. Dorthinein importieren Sie
 
@@ -35,12 +35,12 @@ Bei häufigerer Verwendung von GreenDAO empfiehlt es sich, die Bibliotheken mit 
 <br />
 Über die Proejekt Einstellungen fügen Sie die eben importierten Librarys dem Projekt hinzu.
 
-{% img /images/posts/2012-08-17_Generatorjar.jpg %}
+![image-title-here](/images/posts/2012-08-17_Generatorjar.jpg){:class="img-responsive"}
 <br />
 
 <h2>4. Erstellen des Metamodell</h2>
 <br />
-{% codeblock lang:java %}
+{% highlight java %}
 package de.stuermerbenjamin.samplegenerator;
  
 import java.io.IOException;
@@ -65,16 +65,16 @@ public class Samplegenerator {
         }
     }
 }
-{% endcodeblock %}
+{% endhighlight %}
 <br />
 
 <h2>5. Codegenerierung</h2>
 <br />
 Nun generiert uns GreenDAO aus dem eben erstellten Code unsere DAO Objekte.
 
-{% img /images/posts/2012-08-17_GeneratorRun.jpg %}
+![image-title-here](/images/posts/2012-08-17_GeneratorRun.jpg){:class="img-responsive"}
 <br />
-{% img /images/posts/2012-08-17_GeneratorConsole1.jpg %}
+![image-title-here](/images/posts/2012-08-17_GeneratorConsole1.jpg){:class="img-responsive"}
 <br />
 
 
@@ -100,7 +100,7 @@ Für die Verwendung von greenDAO fügen Sie die library “greenDAO.jar” dem P
 <br />
  
 
-{% codeblock lang:java %}
+{% highlight java %}
 
 package de.stuermerbenjamin.sample;
  
@@ -158,7 +158,7 @@ public class MainActivity extends Activity {
         return true;
     }
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 
 

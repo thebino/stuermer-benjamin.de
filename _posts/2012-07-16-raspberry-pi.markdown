@@ -8,7 +8,7 @@ categories: [ Raspberry Pi, Linux ]
 ---
 Bei dem Raspberry Pi handelt es sich zwar nicht um den kleinsten, aber definitiv zurzeit um den billigsten Linux Computer.
 
-{% img right /images/posts/2012-07-16_Raspberry.jpeg %}
+![image-title-here](/images/posts/2012-07-16_Raspberry.jpeg){:class="img-responsive"}
 
 Für gerade einmal 35 USD (28 Euro) erhält man ein Exemplar. Entwickelt wurde der Raspberry Pi in England durch die Raspberry Pi Foundation. Unterstützt wird diese unter anderem durch die Britische Regierung um den landesweiten Mangel an IT-Fachkräften zu unterbinden.
 
@@ -26,21 +26,21 @@ Schicke Gehäuse findet man unter anderem bei Adafruit ebenso wie ein 2″ oder 
 Überspielen lässt sich das Betriebssystem Image mit dem dd Tool
 
 
-{% codeblock lang:sh %}
+{% highlight shell lineos %}
 dd bs=1m if=debian6-19-04-2012.img of=/dev/rdiskX
-{% endcodeblock %}
+{% endhighlight %}
 Nach der Installation sollte die SD Karte noch korrekt partitioniert werden, das Standardsystem ist lediglich auf 2 GB Karten ausgelegt
 
 
-{% codeblock lang:sh %}
+{% highlight shell lineos %}
 fdisk -c -u /dev/mmcblk0
-{% endcodeblock %}
+{% endhighlight %}
 “den Partitionierer fdisk startet. Mit “p” erhält man einen Überblick über die bestehenden Partitionen; merken Sie sich den Wert für den Start der zweiten Partition (bei dem aktuellen Image vom 19.4. ist das 157696). Zunächst löscht man mit “d” die Partitionen 3 und 2, dann legt man mit “n” eine neue primäre Partition 2 an. Als Startwert verwendet man den Startwert der alten Partition 2, für das Ende akzeptiert man mit “Enter” den Vorschlag von fdisk. “w” schreibt die neue Partitionierung auf die Karte. Nach einem Reboot und erneuter Anmeldung wird dann das Dateisystem mit
 
 
-{% codeblock lang:sh %}
+{% highlight shell lineos %}
 resize2fs /dev/mmcblk0p2
-{% endcodeblock %}
+{% endhighlight %}
 vergrößert.
 
 Nun kann man mit startx den schlanken LXDE-Desktop starten, der in seinem Startmenü diverse Anwendungen anbietet und sich durchaus flüssig bedienen lässt.”
@@ -51,21 +51,21 @@ http://www.spiegel.de/netzwelt/gadgets/raspberry-pi-guenstigster-linux-computer-
 
 System auf Deutsch umstellen
 
-{% codeblock lang:sh %}
+{% highlight shell lineos %}
 sudo dpkg-reconfigure locales
-{% endcodeblock %}
+{% endhighlight %}
 Nachdem unsere Tastatur der deutschen Sprache mächtig ist, legen wir uns am besten einen eigenen User auf dem System an.
 
  
 
 Eigenen User Anlegen
 
-{% codeblock lang:sh %}
+{% highlight shell lineos %}
 $ sudo adduser max
 $ sudo adduser max admin
 $ sudo apt-get install openssh-server
 $ passwd max
-{% endcodeblock %}
+{% endhighlight %}
 Nun ist ein Login auch per SSH und eigenem User möglich.
 
  

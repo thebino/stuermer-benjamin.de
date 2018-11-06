@@ -14,7 +14,8 @@ Mit Ihnen ist es möglich, zwei Activities in einem Tablet Layout bsp. nebeneina
 
 1) Erstellen des Fragment Layouts
 
-{% codeblock lang:xml [/res/layout/text_fragment.xml] %}
+[/res/layout/text_fragment.xml] 
+{% highlight xml %}
 <?xml version="1.0" encoding="utf-8"?>
 <TextView
 xmlns:android="http://schemas.android.com/apk/res/android"
@@ -22,14 +23,15 @@ android:layout_width="fill_parent"
 android:layout_height="wrap_content"
 android:text="@string/text"
 />
-{% endcodeblock %}
+{% endhighlight %}
 
 <!-- more -->
 
 
 2) Fragment Class erstellen
 
-{% codeblock lang:java [/src/your.package/TextFragment.java] %}
+[/src/your.package/TextFragment.java]
+{% highlight java %}
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
  
@@ -40,26 +42,27 @@ public class TextFragment extends Fragment {
         return inflater.inflate(R.layout.text_fragment, container, false);
     }
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 3) Fragment in ursprungs Layout einfügen
 
-{% codeblock lang:xml [/res/layout/main.xml] %}
+[/res/layout/main.xml]
+{% highlight xml %}
 <fragment
     android:id="@+id/news_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     class="de.stuermerbenjamin.exampleview.TextFragment" />
- {% endcodeblock %}
+ {% endhighlight %}
 
 4) MainActivity Class anpassen
 
-{% codeblock lang:java %}
+{% highlight java %}
 public class ExampleViewActivity extends Activity {
-{% endcodeblock %}
+{% endhighlight %}
 ändern in:
-{% codeblock lang:java %}
+{% highlight java %}
 public class ExampleViewActivity extends FragmentActivity {
-{% endcodeblock %}
+{% endhighlight %}
  
 Nun verwendet ihre Anwendung Fragments ;D
