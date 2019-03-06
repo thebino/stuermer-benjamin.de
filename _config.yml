@@ -51,7 +51,7 @@ strict_front_matter:              true
 
 
 
-#  Serve Command OptionsPermalink
+#  Serve Command Options
 #
 # https://jekyllrb.com/docs/configuration/options/#serve-command-options
 #
@@ -160,6 +160,7 @@ url: https://stuermer-benjamin.de
 title: Stuermer, Benjamin
 subtitle: Programming and Photography
 author: Benjamin Stürmer
+keywords: Programming,Photography,Android,Projectmanagement,Management 3.0
 simple_search: https://www.google.com/search
 description: Informations and photos from Benjamin Stürmer
 
