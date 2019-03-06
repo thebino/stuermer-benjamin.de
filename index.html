@@ -317,7 +317,7 @@ images:
       <div class="col s12 center">
         <div class="photo_thumbs" id="lightgallery">
           {% for image in page.images %}
-            <a href="{{ image.image_large }}" class="s5mb" title="{{ image.title }}"><img src="{{ image.image_small }}" id="picture{{ image.image_large | replace: "images/photos/image", "" | replace: "_large.jpg", "" }}" title="{{ image.title }}" alt="{{ image.title }}" id="mb1" class="grow"></a>
+            <a href='{{ image.image_large }}' class='s5mb' title='{{ image.title }}'><img src='{{ image.image_small }}' id="picture{{ image.image_large | replace: "images/photos/image", "" | replace: "_large.jpg", "" }}" title='{{ image.title }}' alt='{{ image.title }}' class='grow'></a>
           {% endfor %}
           
           <div style="clear:both"></div>
