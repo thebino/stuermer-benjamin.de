@@ -59,7 +59,7 @@ strict_front_matter:              true
 port:                             4000
 host:                             172.17.2.50
 detach:                           false
-
+permalink:                        pretty
 
 
 
@@ -135,7 +135,7 @@ collections:
     permalink:                    /post/:year-:month-:day-:title/
   projects:
     output:                       true
-    permalink:                    /project/:name
+    permalink:                    /:collection/:title/
 
 
 
