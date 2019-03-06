@@ -65,4 +65,26 @@
   
   <link rel="stylesheet" type="text/css" href="/lightgallery.min.css" /> 
         
+
+
+  <!-- Open Graph tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:image" content="{{ site.url }}/images/social_share_image.png" />
+  <meta property="og:image:secure_url" content="{{ site.url }}/images/social_share_image.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Stürmer, Benjamin">  
+  <meta property="og:updated_time" content="{{ page.date }}">
+
+
+  <!-- Twitter Card tags -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:site" content="@BenjaminStrmer" />
+  <meta name="twitter:creator" content="@BenjaminStrmer">
+  <meta name="twitter:card" content="summary">
 </head>
