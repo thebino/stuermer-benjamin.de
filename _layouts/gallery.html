@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<style>
+.center-cropped {
+  object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height: 200px;
+  width: 300px;
+}
+</style>
+
+<div class="container">
+  <div class="section">
+
+    <div class="row">
+      <div class="col s12 center">
+        <div class="photo_thumbs" id="lightgallery">
+          {% for image in page.images %}
+            <a href='/images/gallery/{{ page.directory }}/{{ image }}' class='s5mb' title='{{ image.title }}'><img src='/images/gallery/{{ page.directory }}/{{ image }}' class="center-cropped" id="picture{{ image | replace: "image", "" }}" title='{{ image }}' alt='{{ image }}' class='grow'></a>
+          {% endfor %}
+          
+          <div style="clear:both"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

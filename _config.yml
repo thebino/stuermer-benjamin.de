@@ -81,6 +81,14 @@ defaults:
       layout: "project" # overrides previous default layout
       author: "Benjamin Stürmer"
 
+  -
+    scope:
+      path: ""
+      type: "gallery"
+    values:
+      layout: "gallery" # overrides previous default layout
+      author: "Benjamin Stürmer"
+
 
 
 
@@ -133,6 +141,9 @@ collections:
     output:                       true
     permalink:                    /post/:year-:month-:day-:title/
   projects:
+    output:                       true
+    permalink:                    /:collection/:title/
+  gallery:
     output:                       true
     permalink:                    /:collection/:title/
 
