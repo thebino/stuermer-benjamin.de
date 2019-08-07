@@ -56,8 +56,7 @@ strict_front_matter:              true
 # https://jekyllrb.com/docs/configuration/options/#serve-command-options
 #
 ##################################
-port:                             4000
-host:                             172.17.2.50
+host:                             www.stuermer-benjamin
 detach:                           false
 permalink:                        pretty
 
