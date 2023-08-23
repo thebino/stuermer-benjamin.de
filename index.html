@@ -68,48 +68,62 @@ projects:
     </div>
   </div>
 
-  <div class="parallax"><img src="{{site.baseurl}}/images/background1.jpg" alt="Unsplashed background img 1"></div>
+  <div class="parallax"><img src="/images/background1.jpg" alt="Marokko Desert" style="bottom: 100px !important; transform: translate3d(-50%, 380.307px, 0px); opacity: 1;"></div>
 </div>
 
 
-
-
-<!-- 3 Colums -->
 <div class="container">
   <div class="section">
-
     <div class="row">
-      <div class="col s12 m4">
-        <div class="icon-block">
-          <h2 class="center brown-text"><i class="material-icons">android</i></h2>
-          <h5 class="center">Android</h5>
 
-          <p class="light">I'm working as a fulltime mobile Developer at Quartett mobile in Munich. I've spoken on the Droidcon in London and was part of the code camp in Munich. In my freetime I work on several projects and apps for fun.</p>
+      <!-- Card 1 -->
+      <div class="col s12 m6">
+        <div class="card white darken-1 overlapping">
+          <div class="card-content white-text">
+            <span class="card-title black-text center-align">
+              <div class="round-icon-background">
+                <i class="material-icons">devices</i>
+              </div>
+              <h5 class="center">Programming</h5>
+            </span>
+            <p class="black-text" style="text-align: justify;">
+              I'm working as a fulltime Software Engineer and Technical Lead at Quartett mobile in Munich.
+              Besides my emphasis on mobile development, I have lots of experience in Webdevelopment, Automation and Machine Learning. 
+              I've spoken on international conferences like Droidcon in London, the Leads Summit in Lisbon and was part of the code camp in Munich.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="mailto:webmaster [at] stuermer-benjamin [.] de">Book me now!</a>
+          </div>
         </div>
       </div>
 
-      <div class="col s12 m4">
-        <div class="icon-block">
-          <h2 class="center brown-text"><i class="material-icons">camera</i></h2>
-          <h5 class="center">Photography</h5>
-
-          <p class="light">I was booked for several weddings, company events and private fotoshoots. I've traveled around the world to take amazing pictures and it is still my favorite hobby. My profound knowledge covers studio photography, architecture and portrait.</p>
+      <!-- Card 2 -->
+      <div class="col s12 m6">
+        <div class="card white darken-1 overlapping">
+          <div class="card-content white-text">
+            <span class="card-title black-text center-align">
+              <div class="round-icon-background">
+                <i class="material-icons">camera_alt</i>
+              </div>
+              <h5 class="center">Photography</h5>
+            </span>
+            <p class="black-text" style="text-align: justify;">
+              Photography is my second passion. <br>
+              I was booked for weddings in Spain, company events in Italy and traveled around the world to take amazing pictures.
+              My profound knowledge covers studio photography, architecture, portraits and landscapes.<br>
+              <br>
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="mailto:webmaster [at] stuermer-benjamin [.] de">Book me now!</a>
+          </div>
         </div>
       </div>
-
-      <div class="col s12 m4">
-        <div class="icon-block">
-          <h2 class="center brown-text"><i class="material-icons">cloud</i></h2>
-          <h5 class="center">Internet</h5>
-
-          <p class="light">I offer services for information technologies in general, where I provide knowledge in different scopes. You can order webdesign, programming and network planning just as create special it-solutions.</p>
-        </div>
-      </div>
+    
     </div>
-
   </div>
 </div>
-
 
 
 
@@ -122,21 +136,21 @@ projects:
       </div>
     </div>
   </div>
-  <div class="parallax"><img src="{{site.baseurl}}/images/background2.jpg" alt="Unsplashed background img 2"></div>
+  <div class="parallax"><img src="/images/background2.jpg" alt="New York Skyline" style="transform: translate3d(-50%, 348.4px, 0px); opacity: 1;"></div>
 </div><br />
 
 
 
 
 <!-- Gallery -->
-<div class="container">
+<div class="container overlapping2">
   <div class="section">
 
     <div class="row">
       <div class="col s12 center">
         <div class="photo_thumbs" id="lightgallery">
           {% for image in site.data.images %}
-            <a href='images/photos/{{ image.id }}_large.jpg' class='s5mb' title='{{ image.title }}'><img src='images/photos/{{ image.id }}_small.jpg' id="picture{{ image.id | replace: "image", "" }}" title='{{ image.title }}' alt='{{ image.title }}' class='grow'></a>
+          <a href='/images/photos/{{ image.id }}_large.jpg' class='s5mb' title='{{ image.title }}'><img src='/images/photos/{{ image.id }}_small.jpg' class="center-cropped" id="picture{{ image.id | replace: "image", "" }}" title='{{ image.title }}' alt='{{ image.title }}' class='grow'></a>
           {% endfor %}
           
           <div style="clear:both"></div>
@@ -159,7 +173,7 @@ projects:
       </div>
     </div>
   </div>
-  <div class="parallax"><img src="{{site.baseurl}}/images/background3.jpg" alt="Unsplashed background img 3"></div>
+  <div class="parallax"><img src="/images/background3.jpg" alt="Libanon" style="opacity: 1; transform: translate3d(-50%, 14.7875px, 0px);"></div>
 </div><br />
 
 

@@ -3,7 +3,7 @@
 # https://jekyllrb.com/docs/configuration/options/
 #
 source:                           .
-destination:                      httpdocs
+destination:                      ./_site
 
 # Disable custom plugins, and ignore symbolic links
 safe:                             true
@@ -34,7 +34,7 @@ encoding:                         "utf-8"
 show_drafts:                      false
 
 # Publish posts or collection documents with a future date.
-future:                           true
+future:                           false
 
 # Render posts that were marked as unpublished.
 unpublished:                      false
@@ -89,48 +89,6 @@ defaults:
       layout: "gallery" # overrides previous default layout
       author: "Benjamin Stürmer"
 
-
-
-
-# Markdown Options
-#
-# https://jekyllrb.com/docs/configuration/markdown/
-#
-markdown:                         kramdown
-
-kramdown:
-  auto_ids:             true
-  entity_output:        as_char
-  toc_levels:           1..6
-  smart_quotes:         lsquo,rsquo,ldquo,rdquo
-  input:                GFM
-  hard_wrap:            false
-  footnote_nr:          1
-  show_warnings:        false
-  syntax_highlighter:   rouge
-
-
-
-
-# Liquid Options
-#
-# https://jekyllrb.com/docs/configuration/liquid/
-#
-
-
-
-
-# WEBrick Options
-#
-# https://jekyllrb.com/docs/configuration/webrick/
-#
-webrick:
-  headers:
-    X-XSS-Protection: 1; mode=block
-
-
-
-
 # Collections
 # 
 # https://jekyllrb.com/docs/collections/
@@ -173,9 +131,3 @@ author: Benjamin Stürmer
 keywords: Programming,Photography,Android,Projectmanagement,Management 3.0
 simple_search: https://www.google.com/search
 description: Informations and photos from Benjamin Stürmer
-
-# Google Analytics
-google_analytics: UA-42459013-1
-
-
-

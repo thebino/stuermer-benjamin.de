@@ -1,0 +1,4 @@
+{
+    "image": "jekyll/jekyll",
+    "forwardPorts": [ 4000 ]
+}

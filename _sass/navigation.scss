@@ -17,6 +17,21 @@ nav a {
 	color: rgba(255,87,34,0.87) !important;
 }
 
+.overlapping {
+	margin-top: -90px;
+  }
+
+.round-icon-background {
+	display: inline-flex;
+	padding: 10px;
+	border-radius: 50%;
+	background-color: #FF5722;
+}
+
+.material-icons {
+	width: 32px;
+}
+
 
 @font-face{
 	font-family:'BinofontItalic';
